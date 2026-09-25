@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Create Account</h1>
+    <p class="subtitle">Sign up to get started</p>
+
+    <form id="signupForm">
+      <div class="form-group">
+        <label for="fullName">Full Name</label>
+        <input type="text" id="fullName" placeholder="John Doe" required />
+        <small class="error" id="fullNameError"></small>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="you@example.com" required />
+        <small class="error" id="emailError"></small>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Min 8 characters" required />
+        <small class="error" id="passwordError"></small>
+      </div>
+
+      <div class="form-group">
+        <label for="confirmPassword">Confirm Password</label>
+        <input type="password" id="confirmPassword" placeholder="Re-enter password" required />
+        <small class="error" id="confirmPasswordError"></small>
+      </div>
+
+      <button type="submit" id="submitBtn">Sign Up</button>
+    </form>
+
+    <p class="login-link">Already have an account? <a href="#">Log in</a></p>
+  </div>
+
+  <div class="modal" id="successModal">
+    <div class="modal-content">
+      <h2>Account Created!</h2>
+      <p id="successMessage"></p>
+      <button id="modalClose">OK</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
